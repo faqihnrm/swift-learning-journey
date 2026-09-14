@@ -22,12 +22,13 @@ func hitungKebutuhanCat(panjang: Double, lebar: Double, tinggi: Double, luasPeng
     let totalLiterPembulatan = Int(ceil(totalLiterDibutuhkan))
     let totalBiaya = Double(totalLiterPembulatan) * hargaPerLiter
     
-    print("HASIL ANALISA LOGIKA")
-    print("Total Luas Dinding Kotor  : \(luasDindingKotor) m²")
-    print("Total Luas Pengurang: \(luasPengurang) m²")
-    print("Total Luas Dinding Bersih: \(luasDindingBersih) m²")
-    print("Estimasi Cat Dibutuhkan: \(totalLiterPembulatan) Liter")
-    print("Estimasi Total Biaya: Rp\(Int(totalBiaya))")
+    print("\n=== HASIL ANALISIS ===")
+    print("")
+    print("Luas Dinding Kotor   : \(luasDindingKotor) m²")
+    print("Luas Pintu & Jendela : \(luasPengurang) m²")
+    print("Luas Dinding Bersih  : \(luasDindingBersih) m²")
+    print("Kebutuhan Cat        : \(totalLiterPembulatan) Liter")
+    print("Estimasi Biaya       : Rp\(Int(totalBiaya))")
 }
 
 let panjang = memintaInputAngka(pesan: "Masukkan Panjang Dinding (m): ")
@@ -36,4 +37,10 @@ let tinggi = memintaInputAngka(pesan: "Masukkan Tinggi Dinding (m): ")
 let luasPengurang = memintaInputAngka(pesan: "Masukkan Total Luas Jendela & Pintu (m²): ")
 let hargaCat = memintaInputAngka(pesan: "Masukkan Harga Cat Per Liter (Rp): ")
 
-hitungKebutuhanCat(panjang: panjang, lebar: lebar, tinggi: tinggi, luasPengurang: luasPengurang, hargaPerLiter: hargaCat)
+hitungKebutuhanCat(
+    panjang: panjang,
+    lebar: lebar,
+    tinggi: tinggi,
+    luasPengurang: luasPengurang,
+    hargaPerLiter: hargaCat
+)
