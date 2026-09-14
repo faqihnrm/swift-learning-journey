@@ -7,7 +7,7 @@ func hitungKebutuhanCat(panjang: Double, lebar: Double, tinggi: Double) {
 
     print("HASIL ANALISA LOGIKA")
     print("Total Luas Dinding: \(luasDinding) m²")
-    print("Estimasi Cat Yang Dibtuhkan: \(totalLiterPembulatan) Liter")
+    print("Estimasi Cat Yang Dibutuhkan: \(totalLiterPembulatan) Liter")
 }
 
     print("Masukan Panjang Dinding (m): ", terminator: "")
