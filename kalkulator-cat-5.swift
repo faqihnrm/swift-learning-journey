@@ -11,7 +11,7 @@ func hitungKebutuhanCat(panjang: Double, lebar: Double, tinggi: Double, luasPeng
     print("Total Luas Kotor Dinding: \(luasKotorDinding) m²")
     print("Total Luas Pengurang: \(luasPengurang) m²")
     print("Total Luas Bersih Dinding: \(luasBersihDinding) m²")
-    print("Estimasi Cat Yang Dibtuhkan: \(totalLiterPembulatan) Liter")
+    print("Estimasi Cat Yang Dibutuhkan: \(totalLiterPembulatan) Liter")
     print("Estimasi Total Biaya: Rp\(Int(totalBiaya))")
     
 }
